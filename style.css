@@ -1,0 +1,60 @@
+* {
+    background-color: #e5e7e6;
+    color: #141301;
+    font-family: "Cantarell";
+}
+
+body {
+    width: 60%;
+    margin: 5% auto;
+    font-size: 15px;
+}
+
+h1 {
+    font-family: "Fjalla One";
+    font-size: 40px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+h2 {
+    font-weight: 200;
+    font-size: 20px;
+    margin-top: 0px;
+}
+
+.container {
+    display: flex;
+}
+
+.bio {
+    flex-grow: 1;
+    padding-right: 10px;
+}
+
+.profile-photo img{
+    display: block;
+    border-radius: 61% 39% 82% 18% / 43% 73% 27% 57% ;
+    width: 250px;
+    height: 200px;
+    object-fit: cover;
+    margin-top: 30px;
+}
+
+#contact-links {
+    display: flex;
+    align-items: center; 
+    margin: auto;
+    text-align: center;
+}
+
+#contact-links img {
+    width: 15px;
+    height: 15px;
+    margin-right: 8px;
+}
+
+.spacer {
+    margin-right: 20px;
+    margin-left: 20px;
+}
