@@ -25,6 +25,7 @@ h2 {
 
 .container {
     display: flex;
+    margin-bottom: 40px;
 }
 
 .bio {
@@ -32,7 +33,7 @@ h2 {
     padding-right: 10px;
 }
 
-.profile-photo img{
+#profile-img img {
     display: block;
     border-radius: 61% 39% 82% 18% / 43% 73% 27% 57% ;
     width: 250px;
@@ -41,20 +42,50 @@ h2 {
     margin-top: 30px;
 }
 
-#contact-links {
+.links {
     display: flex;
     align-items: center; 
     margin: auto;
     text-align: center;
 }
 
-#contact-links img {
+.links img {
     width: 15px;
     height: 15px;
+}
+
+.contact-links img {
     margin-right: 8px;
+}
+
+.project-links img {
+    margin-right: 5px;
 }
 
 .spacer {
     margin-right: 20px;
     margin-left: 20px;
+}
+
+.spacer-small {
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.project-img img {
+    display: block;
+    width: 250px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.project-text {
+    padding-left: 20px;
+    align-items: center; 
+}
+
+.project-text img {
+    height: 15px;
+    width: 15px;
+    object-fit: cover;
 }
