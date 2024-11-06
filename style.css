@@ -1,17 +1,19 @@
 * {
-    background-color: #e5e7e6;
+    background-color: #ffffff;
     color: #141301;
-    font-family: "Cantarell";
 }
 
 body {
-    width: 60%;
-    margin: 5% auto;
+    margin: 0px;
     font-size: 15px;
 }
 
+#main {
+    width: 95%;
+    margin: 20px auto 0px auto;
+}
+
 h1 {
-    font-family: "Fjalla One";
     font-size: 40px;
     margin-top: 0px;
     margin-bottom: 0px;
@@ -21,6 +23,43 @@ h2 {
     font-weight: 200;
     font-size: 20px;
     margin-top: 0px;
+}
+
+.fragment-mono-regular {
+    font-family: "Fragment Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.fragment-mono-regular-italic {
+    font-family: "Fragment Mono", monospace;
+    font-weight: 400;
+    font-style: italic;
+}
+
+button {
+    font-family: inherit;
+    border: none;
+    cursor:pointer;
+}
+
+#homebutton {
+    background-image: url('images/NanaLogoNoMargin.png');
+    background-position: left;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 64px;
+    width: 64px;
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-between
+}
+
+.nav-button {
+    width: 150px;
+    text-align: right;
 }
 
 .container {
@@ -39,6 +78,7 @@ h2 {
     width: 250px;
     height: 200px;
     object-fit: cover;
+    object-position: 100% 60%;
     margin-top: 30px;
 }
 
@@ -77,6 +117,7 @@ h2 {
     width: 250px;
     height: 150px;
     object-fit: cover;
+    border-radius: 8px;
 }
 
 .project-text {
@@ -88,4 +129,12 @@ h2 {
     height: 15px;
     width: 15px;
     object-fit: cover;
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #141301;
+
 }
