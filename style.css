@@ -4,13 +4,9 @@
 }
 
 body {
-    margin: 0px;
-    font-size: 14px;
-}
-
-#main {
     width: 95%;
-    margin: 20px auto 0px auto;
+    margin-top: 20px;
+    font-size: 14px;
 }
 
 .fragment-mono-regular {
@@ -23,33 +19,6 @@ body {
     font-family: "Fragment Mono", monospace;
     font-weight: 400;
     font-style: italic;
-}
-
-button {
-    font-family: inherit;
-    font-size: 14px;
-    border: none;
-    cursor: pointer;
-
-}
-
-#homebutton {
-    background-image: url('images/NanaLogoNoMargin.png');
-    background-position: left;
-    background-size: contain;
-    background-repeat: no-repeat;
-    height: 64px;
-    width: 64px;
-}
-
-#navbar {
-    display: flex;
-    justify-content: space-between
-}
-
-.nav-button {
-    width: 150px;
-    text-align: right;
 }
 
 .container {
