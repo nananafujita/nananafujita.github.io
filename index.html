@@ -3,27 +3,25 @@
 <html>
 <head>
     <title>Nana Fujita</title>
-    <link rel="stylesheet" href="style.css?version=1">
-    <link rel="stylesheet" href="navbar.css?version=1">
-
-    <link rel="icon" href="images/NanaLogo.png">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fragment+Mono:ital@0;1&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
+    <script>
+        fetch('head.html')
+            .then(response => response.text())
+            .then(data => {
+                document.head.innerHTML += data;
+            });
+    </script>
 </head>
 
 <body class="work-sans-regular-400">
     <div id="navbar-placeholder"></div>
     <main>
         <p>Hi, it's <span style="font-size: 16px; font-weight: 600; font-style: italic;">NANA</span> (like mama, papa, and llama).<br><br>
-        I develop tools and apps that allow for seamless creation of beautiful scenes.
+        A student studying Computer Science Games and Environmental Science, I develop tools and apps that allow for seamless creation of beautiful scenes.
         </p>
-    </main>
-    <footer>
+
         <a href="mailto:nanaefuj@usc.edu">nanaefuj@usc.edu</a>
-    </footer>
+    </main>
+       
 
     <script>
         fetch('navbar.html')

@@ -2,18 +2,25 @@
 
 <html>
     <head>
-
+        <title>Projects</title>
+        <script>
+            fetch('/head.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.head.innerHTML += data;
+                });
+        </script>
     </head>
-    <body>Hello
-
-        <!--<div class="container">
-            <div class="bio">
-                <h1>Nana Fujita</h1>
-                <p>Hi! My name is Nanae "Nana". I'm currently studying Computer Science Games and Environmental Studies at the University of Southern California (graduating December 2024).<br><br>
-                I have worked as a software engineer intern at a video game startup and as a lead UI engineer on a published video game. I've also developed projects of my own, mainly in <br><br>
-                My love for nature and the environment fuels my interest in recreating the many beautiful, curious phenomenon of this planet on computer screens. My interests mainly lie in ____ but am learning </p>
-
-                <div class="links contact-links">
+    <body class="work-sans-regular-400">
+        <div id="navbar-placeholder"></div>
+        <script>
+            fetch('/navbar.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('navbar-placeholder').innerHTML = data;
+                });
+        </script>
+              <!--  <div class="links contact-links">
                     <img src="images/email.png"><a href="mailto:nanaefuj@usc.edu">nanaefuj@usc.edu</a><div class="spacer">|</div>
                     <img src="images/linkedin.png"><a href="https://www.linkedin.com/in/nanafujita/" target=”_blank”>LinkedIn</a><div class="spacer">|</div>
                     <img src="images/github.png"><a href=" https://github.com/nananafujita" target=”_blank”>Github</a><div class="spacer">|</div>
