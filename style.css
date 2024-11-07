@@ -20,76 +20,7 @@ body {
     font-weight: 400;
     font-style: italic;
 }
-
-.container {
-    display: flex;
-    margin-bottom: 40px;
-}
-
-.bio {
-    flex-grow: 1;
-    padding-right: 10px;
-}
-
-#profile-img img {
-    display: block;
-    border-radius: 61% 39% 82% 18% / 43% 73% 27% 57% ;
-    width: 250px;
-    height: 200px;
-    object-fit: cover;
-    object-position: 100% 60%;
-    margin-top: 30px;
-}
-
-.links {
-    display: flex;
-    align-items: center; 
-    margin: auto;
-    text-align: center;
-}
-
-.links img {
-    width: 15px;
-    height: 15px;
-}
-
-.contact-links img {
-    margin-right: 8px;
-}
-
-.project-links img {
-    margin-right: 5px;
-}
-
-.spacer {
-    margin-right: 20px;
-    margin-left: 20px;
-}
-
-.spacer-small {
-    margin-right: 5px;
-    margin-left: 5px;
-}
-
-.project-img img {
-    display: block;
-    width: 250px;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 8px;
-}
-
-.project-text {
-    padding-left: 20px;
-    align-items: center; 
-}
-
-.project-text img {
-    height: 15px;
-    width: 15px;
-    object-fit: cover;
-}
-
+s
 footer {
     display: flex;
     width: 100vw;
