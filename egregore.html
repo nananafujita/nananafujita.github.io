@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Egregore</title>
+    <script>
+        fetch('head.html')
+            .then(response => response.text())
+            .then(data => {
+                document.head.innerHTML += data;
+            });
+    </script>
+
+</head>
+
+<body class="inter-regular-400">
+    <div id="navbar-placeholder"></div> 
+
+    <!--add an arrow up here to return to main page-->
+
+    <div id="intro">
+        <span style="font-size: 40px; font-weight: 600; font-style: italic;">Egregore</span></span>
+        <span style="font-size: 25px; margin-left: 10px">UI LEAD</span><br><br>
+        <a href="https://store.steampowered.com/app/2858380/Egregore/" target="_blank">Steam</a><br><br>
+        More info coming soon... Check out the Steam page for now!<br><br>
+    </div>
+
+    
+    <script>
+        fetch('navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar-placeholder').innerHTML = data;
+            });
+    </script>
+</body>
+</html>
