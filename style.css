@@ -6,7 +6,7 @@
 body {
     max-width: 95%;
     margin: 20px auto;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 a {
@@ -54,7 +54,7 @@ a {
 }
 
 #intro {
-    margin-top: 50px;
+    margin-top: 40px;
     width: 70%;
 }
 
@@ -68,8 +68,8 @@ a {
 }
  
 .project {
-    flex: 1;
-    height: 500px;
+    width: 24%;
+    height: 450px;
     display: flex;
     flex-direction: column; /* Stack content vertically */
     overflow: hidden; /* Prevent overflow */
@@ -93,7 +93,6 @@ a {
     width: 100%; /* Ensure the image fills the width of the container */
     height: 100%; /* Ensure the image fills the height of the container */
     object-fit: cover;
-    object-position: 15% 50%;
 }
 
 .project-head {
@@ -107,10 +106,14 @@ a {
     font-size: 1em;
 }
 
-.project-role {
-    text-align: right; /* Explicitly align the role text to the right */
-    font-size: 1em; /* Optional: Adjust font size */
-    color: dimgrey;
+@media screen and (max-width: 1024px) {
+    #projects-container {
+        flex-direction: row; /* Keep the row layout */
+    }
+
+    .project {
+        width: 48%;  /* Adjust to two projects per row */
+    }
 }
 
 @media screen and (max-width: 768px) {
